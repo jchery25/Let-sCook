@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:../../Documents/Lets Cook/Lets Cook.xcodeproj">
+      location = "self:Cook.xcodeproj">
    </FileRef>
 </Workspace>
