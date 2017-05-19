@@ -8,24 +8,25 @@
 
 import UIKit
 
-class RecipesViewController: UIViewController {
+class RecipesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+   
+    @IBOutlet weak var tableview: UITableView!
+    var recipeIngredientArray = [String]()
 
     let recipes = [
-        Recipe(name: "Carrot Rice"),
-        Recipe(name: "Brown Rice"),
-        Recipe(name: "Apple Rice"),
-        Recipe(name: "Apple Carrot"),
-        Recipe(name: "Carrot Apples")
+        Recipe(name: "White Rice", ingredients: ["Rice"]),
+        Recipe(name: "Brown Rice", ingredients: ["Rice"]),
+        Recipe(name: "Black Rice", ingredients: ["Rice"]),
+        Recipe(name: "Red Rice", ingredients: ["Rice"])
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableview.delegate = self
+        self.tableview.dataSource = self
         
-        print(recipes[0].name)
-        
-        
-        
-
         // Do any additional setup after loading the view.
     }
 
@@ -34,7 +35,30 @@ class RecipesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return recipes.count
+        return recipes.count
+    }
 
+
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+ 
+        cell.textLabel?.text = recipes[indexPath.row].name
+ 
+        return cell
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selectedIndexPath = tableview.indexPathForSelectedRow {
+            let des = segue.destination
+            let selectedRecipe = recipes[selectedIndexPath.row]
+            
+            // set selected recipe in new view controller
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

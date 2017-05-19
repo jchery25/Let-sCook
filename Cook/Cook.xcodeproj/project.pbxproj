@@ -14,6 +14,8 @@
 		182804071ECE963600F91AAB /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182804061ECE963600F91AAB /* Recipe.swift */; };
 		182804091ECE977C00F91AAB /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182804081ECE977C00F91AAB /* RecipesViewController.swift */; };
 		1828040B1ECF2B4500F91AAB /* RecipesCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1828040A1ECF2B4500F91AAB /* RecipesCellNib.xib */; };
+		1828040D1ECF3EE200F91AAB /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828040C1ECF3EE200F91AAB /* RecipesTableViewController.swift */; };
+		1828040F1ECF5C2800F91AAB /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828040E1ECF5C2800F91AAB /* IngredientsViewController.swift */; };
 		18E79C5F1ECDF28000B23F43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E79C5E1ECDF28000B23F43 /* AppDelegate.swift */; };
 		18E79C611ECDF28000B23F43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E79C601ECDF28000B23F43 /* ViewController.swift */; };
 		18E79C641ECDF28000B23F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E79C621ECDF28000B23F43 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		182804061ECE963600F91AAB /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		182804081ECE977C00F91AAB /* RecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		1828040A1ECF2B4500F91AAB /* RecipesCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipesCellNib.xib; sourceTree = "<group>"; };
+		1828040C1ECF3EE200F91AAB /* RecipesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		1828040E1ECF5C2800F91AAB /* IngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		18E79C5B1ECDF28000B23F43 /* Cook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E79C5E1ECDF28000B23F43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E79C601ECDF28000B23F43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +119,9 @@
 				18E79C601ECDF28000B23F43 /* ViewController.swift */,
 				182804061ECE963600F91AAB /* Recipe.swift */,
 				18E79C621ECDF28000B23F43 /* Main.storyboard */,
+				1828040E1ECF5C2800F91AAB /* IngredientsViewController.swift */,
 				182804081ECE977C00F91AAB /* RecipesViewController.swift */,
+				1828040C1ECF3EE200F91AAB /* RecipesTableViewController.swift */,
 				182804041ECE891400F91AAB /* RecipesTableViewCell.swift */,
 				182804001ECE508100F91AAB /* IngredientsTableViewCell.swift */,
 				182804021ECE802000F91AAB /* IngredientsCellNib.xib */,
@@ -284,9 +290,11 @@
 			files = (
 				182804011ECE508100F91AAB /* IngredientsTableViewCell.swift in Sources */,
 				182804091ECE977C00F91AAB /* RecipesViewController.swift in Sources */,
+				1828040D1ECF3EE200F91AAB /* RecipesTableViewController.swift in Sources */,
 				18E79C611ECDF28000B23F43 /* ViewController.swift in Sources */,
 				182803FF1ECE495700F91AAB /* ByeTableViewController.swift in Sources */,
 				182804071ECE963600F91AAB /* Recipe.swift in Sources */,
+				1828040F1ECF5C2800F91AAB /* IngredientsViewController.swift in Sources */,
 				182804051ECE891400F91AAB /* RecipesTableViewCell.swift in Sources */,
 				18E79C5F1ECDF28000B23F43 /* AppDelegate.swift in Sources */,
 			);

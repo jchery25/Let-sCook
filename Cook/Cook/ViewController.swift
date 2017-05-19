@@ -52,6 +52,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITextFieldDelega
         
         return true
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let recipe = segue.destination as? RecipesViewController
+        
+        recipe?.recipeIngredientArray = ingredientArray
+        
+        
+    }
 
 }
 
